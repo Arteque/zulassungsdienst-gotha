@@ -24,6 +24,8 @@ a {
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 .call-dark:hover {
   background-color: var(--clr-call-100);
@@ -39,6 +41,8 @@ a {
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 .call-light:hover {
   background-color: var(--clr-light-100);

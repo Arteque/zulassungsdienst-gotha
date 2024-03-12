@@ -13,6 +13,7 @@ function App() {
       <Button url="#" callInline={true}> inline</Button>
 
       <Button url="#" callIcon={true} icon={<FontAwesomeIcon icon={faHome} />} >Home</Button>
+      
     </div>
   )
 }
