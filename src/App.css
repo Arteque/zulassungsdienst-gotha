@@ -1,6 +1,71 @@
+@import "Var.css";
 *, *::before, *::after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-dark-100);
+  font-family: var(--heading);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.call-dark {
+  background-color: var(--clr-call-200);
+  color: var(--clr-light-100);
+  border: 1px solid var(--clr-call-100);
+  padding: 0.5rem 1rem;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+}
+.call-dark:hover {
+  background-color: var(--clr-call-100);
+}
+
+.call-light {
+  background-color: var(--clr-light-200);
+  color: var(--clr-call-200);
+  border: 1px solid var(--clr-light-100);
+  padding: 0.5rem 1rem;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+}
+.call-light:hover {
+  background-color: var(--clr-light-100);
+}
+
+.call-inline {
+  color: var(--clr-dark-200);
+  text-decoration: underline;
+  font-family: inherit;
+}
+.call-inline:hover {
+  color: inherit;
+}
+
+.call-icon .icon {
+  color: var(--clr-dark-100);
+}
+.call-icon .text {
+  display: none;
+}
+.call-icon:hover .icon {
+  color: var(--clr-dark-200);
+}
+
+.call {
+  color: var(--clr-dark-100);
+}
+.call:hover {
+  color: var(--clr-dark-200);
 }/*# sourceMappingURL=App.css.map */

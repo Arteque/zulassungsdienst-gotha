@@ -1,0 +1,26 @@
+@import url("./Fonts.css");
+$clrs:(
+    dark:(
+        100:hsl(219, 20%, 41%),
+        200:hsl(222, 99%, 34%)
+    ),
+    call:(
+        100:hsl(0, 100%, 50%),
+        200:hsl(0, 84%, 39%)
+    ),
+    light:(
+        100:hsl(0, 0%, 89%),
+        200:hsl(0, 0%, 85%),
+        300:hsl(0, 0%, 73%),
+    )
+);
+
+:root{
+    @each $clr, $vls in $clrs{
+        @each $subclr, $subvls in $vls{
+            --clr-#{$clr}-#{$subclr}: #{$subvls};
+        }
+    }
+    --heading: "Oswald";
+    --text: "Fira Sans";
+}

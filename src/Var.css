@@ -1,0 +1,12 @@
+@import url("./Fonts.css");
+:root {
+  --clr-dark-100: hsl(219, 20%, 41%);
+  --clr-dark-200: hsl(222, 99%, 34%);
+  --clr-call-100: hsl(0, 100%, 50%);
+  --clr-call-200: hsl(0, 84%, 39%);
+  --clr-light-100: hsl(0, 0%, 89%);
+  --clr-light-200: hsl(0, 0%, 85%);
+  --clr-light-300: hsl(0, 0%, 73%);
+  --heading: "Oswald";
+  --text: "Fira Sans";
+}/*# sourceMappingURL=Var.css.map */
