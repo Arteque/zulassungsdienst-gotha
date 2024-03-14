@@ -1,9 +1,10 @@
 import { useState } from "react"
-import Menu from "./Menu"
+import { Link } from "react-router-dom"
 function Nav() {
+
     const items = [
         {
-            label:'Start seite',
+            label:'Startseite',
             key:'home'
         },
         {
@@ -15,21 +16,27 @@ function Nav() {
             key: 'kontakt'
         }
     ]
-    const [current, setCurrent] = useState("home")
-
-    const handleClick = (e) => {
-        console.log('click', e)
-        setCurrent(e.key)
+    const [clickedItem , setClickedItem] = useState("")
+    const handleClick = (item) => {
+        setClickedItem(item.key);
     }
 
-
   return (
-    <Menu 
-    onClick={handleClick} 
-    selectedkeys={[current]} 
-    mode="horizontal" 
-    items={items}
-    />
+    <ul className="nav-items">
+        
+        {
+            items.map((item, index) => {
+              return (
+                <li key={index} className={`${clickedItem === item.key ? 'current':''}`}>
+                    <Link to={item.key} onClick={() =>{handleClick(item)}}>
+                        {item.label}
+                    </Link>
+                 </li>  
+              )
+            })
+        }
+        
+    </ul>
   )
 }
 

@@ -1,12 +1,7 @@
-import { Router, Routes, Route } from "react-router-dom"
-import Home from 
+import Nav from "./Components/Nav/Nav"
 function Layout() {
   return (
-    <Router>
-        <Routes>
-            <Route path="/" element={<Home />} />
-        </Routes>
-    </Router>
+    <Nav />
   )
 }
 

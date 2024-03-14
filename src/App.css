@@ -6,6 +6,11 @@
           box-sizing: border-box;
 }
 
+html, body {
+  font-family: var(--text);
+  color: var(--clr-dark-100);
+}
+
 a {
   text-decoration: none;
   color: var(--clr-dark-100);
@@ -72,4 +77,86 @@ a {
 }
 .call:hover {
   color: var(--clr-dark-200);
+}
+
+.font-icons {
+  color: var(--clr-light-100);
+  background-color: var(--clr-dark-200);
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px 0 0 5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.icon-link-item > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.icon-link-item > *:hover .font-icons {
+  background-color: var(--clr-dark-100);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading);
+  text-transform: uppercase;
+  color: var(--clr-dark-100);
+}
+
+h1, h2 {
+  font-size: 80px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+p {
+  font-family: var(--text);
+  color: var(--clr-dark-100);
+  font-size: 17px;
+  letter-spacing: -0.5px;
+  line-height: 1.6rem;
+}
+
+ul:not([class]) {
+  list-style-type: circle;
+  -webkit-margin-start: 1.5rem;
+          margin-inline-start: 1.5rem;
+}
+ul:not([class]) li::marker {
+  color: var(--clr-call-200);
 }/*# sourceMappingURL=App.css.map */
